@@ -1,0 +1,220 @@
+Python Basic Fundamentals – Theory & Interview Questions
+✅ 1. What is Python?
+Python is a high-level, interpreted, general-purpose programming language, known for its readability and simplicity. It supports multiple programming paradigms, including:
+
+Procedural
+
+Object-Oriented
+
+Functional
+
+Developed by: Guido van Rossum
+Released in: 1991
+Latest version: (e.g., Python 3.x)
+
+✅ 2. Features of Python
+Feature	Description
+Interpreted	Executes code line by line via Python Virtual Machine (PVM)
+Dynamically Typed	No need to declare variable types explicitly
+High-Level	Easy to read and write code (close to human language)
+Extensive Library	Rich set of standard and third-party libraries
+Cross-Platform	Runs on Windows, Linux, macOS
+Open Source	Freely available and community-driven
+
+✅ 3. Python Execution Flow
+text
+Copy
+Edit
+Your Code (.py) 
+➡️ Compiled to Bytecode (.pyc) 
+➡️ Interpreted by Python Virtual Machine (PVM) 
+➡️ Output
+Python is not compiled to native machine code.
+
+Bytecode improves performance slightly, but Python is still slower than compiled languages.
+
+✅ 4. Python Identifiers
+Names given to variables, functions, classes, etc.
+
+Rules:
+
+Can contain letters, digits, and underscores
+
+Cannot start with a digit
+
+Cannot be a keyword
+
+Case-sensitive (Name ≠ name)
+
+✅ 5. Python Keywords
+Reserved words that have special meaning.
+
+Examples:
+if, else, elif, while, for, break, continue, import, from, as, def, class, try, except, True, False, None
+
+To list all:
+
+python
+Copy
+Edit
+import keyword
+print(keyword.kwlist)
+✅ 6. Variables
+Created on assignment (x = 10)
+
+Dynamically typed (no need to declare type)
+
+Python uses references, not direct memory values
+
+Example:
+
+python
+Copy
+Edit
+name = "Suraj"
+age = 30
+✅ 7. Comments in Python
+Single-line comment: # This is a comment
+
+Multi-line (docstring): '''This is a docstring''' or """This is a docstring"""
+
+✅ 8. Indentation
+Mandatory in Python (replaces braces {} from other languages)
+
+Standard: 4 spaces per block (tabs discouraged)
+
+Used to define blocks: if, loops, functions, classes, etc.
+
+Incorrect:
+
+python
+Copy
+Edit
+if True:
+print("Hello")  # IndentationError
+Correct:
+
+python
+Copy
+Edit
+if True:
+    print("Hello")
+✅ 9. Input and Output
+print() – Output
+python
+Copy
+Edit
+print("Hello, World!")
+print("Name:", name)
+input() – Input
+python
+Copy
+Edit
+user_input = input("Enter something: ")
+Always returns string
+
+Cast to another type if needed:
+
+python
+Copy
+Edit
+age = int(input("Enter your age: "))
+✅ 10. Type Casting
+Function	Purpose
+int()	Convert to integer
+float()	Convert to float
+str()	Convert to string
+bool()	Convert to boolean
+
+Example:
+
+python
+Copy
+Edit
+x = int("5")  # 5
+✅ 11. Escape Sequences
+Sequence	Meaning
+\n	Newline
+\t	Tab
+\\	Backslash
+\'	Single Quote
+\"	Double Quote
+
+✅ 12. Python Operators (Basics)
+Type	Operators
+Arithmetic	+, -, *, /, %, **
+Comparison	==, !=, <, >, <=, >=
+Logical	and, or, not
+Assignment	=, +=, -=, *=, etc.
+Identity	is, is not
+Membership	in, not in
+
+✅ 13. Code Blocks & Control Flow Basics
+If-Else:
+python
+Copy
+Edit
+if age > 18:
+    print("Adult")
+else:
+    print("Minor")
+While Loop:
+python
+Copy
+Edit
+while count < 5:
+    print(count)
+    count += 1
+For Loop:
+python
+Copy
+Edit
+for i in range(3):
+    print(i)
+✅ 14. Interview Questions – Python Fundamentals Only
+📘 Theoretical
+What is Python and what are its key features?
+
+Explain Python’s execution flow.
+
+Why is indentation important in Python?
+
+Is Python compiled or interpreted?
+
+What is PVM (Python Virtual Machine)?
+
+How is memory managed in Python?
+
+🧪 Code-Based
+What is the output of:
+
+python
+Copy
+Edit
+print("5" + "5")
+→ '55' (string concatenation)
+
+What will this code print?
+
+python
+Copy
+Edit
+x = 5
+y = "5"
+print(x + int(y))
+→ 10
+
+Identify the error:
+
+python
+Copy
+Edit
+if True
+    print("Hi")
+→ SyntaxError: Missing colon
+
+What happens if you don’t indent code correctly?
+→ IndentationError
+
+What does input() return in Python 3?
+→ Always returns a string
